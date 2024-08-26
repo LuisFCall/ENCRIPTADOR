@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador de Texto</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+    <header>
+        
+    </header>
+<body>
+    <div class="container">
+        <h1>Encriptador de Texto</h1>
+        <p class="presentacion__contenido__texto">¡Bienvenidos! ¿Alguna vez se preguntaron por qué Whatsapp introdujo la funcionalidad "cifrado de extremo a extremo"? Al escribir un msje. la data es enviada a los nodos del server de Whatsapp, y desde allí vuelve a salir dicha información (encriptada) hacia el destinatario final, esto es necesario dado que protege la confidencialidad de tu información mientras la data viaja de nodo a nodo en la red. Este encriptador funciona de forma similar y esta diseñado para proteger tu información.</p>
+        <div class="input-section">
+            <textarea id="inputText" placeholder ="Ingresa el texto aquí..."></textarea>
+            <div class="options">
+                <label><input type="radio" name="mode" value="encrypt" checked> Encriptar</label>
+                <label><input type="radio" name="mode" value="decrypt"> Desencriptar</label>
+            </div>
+            <button id="processButton">Procesar</button>
+        </div>
+        <div class="output-section">
+            <textarea id="outputText" readonly></textarea>
+            <button id="copyButton">Copiar</button>
+        </div>
+    </div>
+    <script src="./script.js"></script>
+</body>
+<footer class="footer">
+    <p class="footer">Desarrollado por Luis Felipe Callirgos Carmona</p>
+</footer>   
+</html>
